@@ -3,8 +3,6 @@
 #include <commctrl.h>
 #include <tchar.h>
 
-#include <cstdio>
-
 #include "CClsWind.h"
 #include "CWind.h"
 

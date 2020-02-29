@@ -1,4 +1,3 @@
-#include <cstdio>
 #include <cassert>
 #include "CWind.h"
 
@@ -99,10 +98,6 @@ void CWind::SetExStyle(LONG s) {
 
 LRESULT CALLBACK CWind::evtHandler(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) {
 	int res = -1;
-
-#ifdef USE_CONSOLE
-	printf("WndProc: msg=%94lx\n", message);
-#endif // USE_CONSOLE
 
 	switch (message) {
 	case WM_CREATE: res = WmCreate(hWnd, wParam, lParam); break;

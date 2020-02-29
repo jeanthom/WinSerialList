@@ -12,6 +12,6 @@ WinSerialList.exe: $(OBJS)
 	$(CXX) $(LDFLAGS) $(OBJS) -o $@ -Wl,--gc-sections -Wl,--strip-all
 
 clean:
-	rm src/*.o
-	rm WinSerialList.exe
+	rm -f src/*.o
+	rm -f WinSerialList.exe
 .PHONY: clean
